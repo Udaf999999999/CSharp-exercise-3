@@ -37,6 +37,10 @@
             Console.WriteLine(myFavoriteDay);
             Console.WriteLine("\tПривет,\n мир!");
 
+            double result = 5 / 2 * 3;
+            int resultInt = Convert.ToInt32(result);
+            Console.WriteLine("5 / 2 = {0}", resultInt);
+
         }
     }
 }
