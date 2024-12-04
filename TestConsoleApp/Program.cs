@@ -32,14 +32,23 @@
 
             Console.WriteLine();
 
-            Semaphore myFavoriteDay = Semaphore.Yellow;
+            Semaphore myFavoriteDay = (Semaphore) int.Parse("200");
 
             Console.WriteLine(myFavoriteDay);
             Console.WriteLine("\tПривет,\n мир!");
 
-            double result = 5 / 2 * 3;
-            int resultInt = Convert.ToInt32(result);
-            Console.WriteLine("5 / 2 = {0}", resultInt);
+            var age2 = checked((long)int.Parse("30"));
+            var day = (Semaphore)int.Parse("200");
+            Console.WriteLine("5 / 2 = {0}", age2);
+
+            Console.WriteLine("Enter your name.");
+            string userName = Console.ReadLine();
+            Console.WriteLine("Enter your age");
+            int userAge;
+            bool isCorrectAge = Int32.TryParse(Console.ReadLine, out userAge);
+            Console.WriteLine("Enter your birth day");
+            string userBirthDay = Console.ReadLine();
+
 
         }
     }
